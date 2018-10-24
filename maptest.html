@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Student Debt</title>
+        <link rel="stylesheet" href="assets/stylesheets/base2.css">
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Charmonman:100,400,700">
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Raleway">
+        <script src="jquery-3.3.1.min.js"></script>
+        <link href="jqvmap/jqvmap-master/dist/jqvmap.css" media="screen" rel="stylesheet" type="text/css"/>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script src="jqvmap/jqvmap-master/dist/jquery.vmap.js"></script>
+        <script src="jqvmap/jqvmap-master/dist/maps/jquery.vmap.usa.js"></script>
+             
+        <script>
+        jQuery(document).ready(function () {
+            jQuery('#vmap').vectorMap({
+                map: 'usa_en',
+                //backgroundColor = '#FFFFFF',
+                enableZoom: true,
+                showTooltip: true,
+                selectedColor: '#666666',
+                hoverColor: '#FFFFFF',
+                // colors: {
+                //     mo: '#C9DFAF',
+                //     fl: '#C9DFAF',
+                //     or: '#C9DFAF'
+                // },
+                onRegionClick: function(event, code, region){
+                    document.getElementById("text1").innerHTML = "Your state is: " + region + " and your code is:" + code;
+                }
+            });
+        })
+        </script>
+    </head>
+    <body>
+        <div id="vmap" class="map"></div>
+        <div id='text1' class="maptext">Your state is:</div>
+    </body>
+</html>

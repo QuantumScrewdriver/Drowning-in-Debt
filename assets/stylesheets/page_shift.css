@@ -1,0 +1,543 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*
+    ==============
+    end hard reset
+    ==============
+*/
+
+/*
+    =============
+    Screen-moving
+    =============
+*/
+
+@-webkit-keyframes one-to-two {
+    0% {
+        width: 100%;
+        height: 100%;
+        background-image: url("images/Image-7.png");
+        background-position: 0% 0%;
+    }
+    100% {
+        width: 100%;
+        height: 100%;
+        background-image: url("images/Image-7.png");
+        background-position: 0% -100vh;
+    }
+}
+
+@keyframes one-to-two {
+    0% {
+        width: 100%;
+        height: 100%;
+        background-image: url("images/Image-7.png");
+        background-position: 0% 0%;
+    }
+    100% {
+        width: 100%;
+        height: 100%;
+        background-image: url("images/Image-7.png");
+        background-position: 0% -100vh;
+    }
+}
+
+@-webkit-keyframes one-to-three {
+    0% {
+        width: 100%;
+        height: 100%;
+        background-image: url("images/Image-7.png");
+        background-position: 0% 0%;
+    }
+    100% {
+        width: 100%;
+        height: 100%;
+        background-image: url("images/Image-7.png");
+        background-position: 0% -250vh;
+    }
+}
+
+@keyframes one-to-three {
+    0% {
+        width: 100%;
+        height: 100%;
+        background-image: url("images/Image-7.png");
+        background-position: 0% 0%;
+    }
+    100% {
+        width: 100%;
+        height: 100%;
+        background-image: url("images/Image-7.png");
+        background-position: 0% -250vh;
+    }
+}
+
+@-webkit-keyframes one-to-four {
+    0% {
+        width: 100%;
+        height: 100%;
+        background-image: url("images/Image-7.png");
+        background-position: 0% 0%;
+    }
+    100% {
+        width: 100%;
+        height: 100%;
+        background-image: url("images/Image-7.png");
+        background-position: 0% -400vh;
+    }
+}
+
+@keyframes one-to-four {
+    0% {
+        width: 100%;
+        height: 100%;
+        background-image: url("images/Image-7.png");
+        background-position: 0% 0%;
+    }
+    100% {
+        width: 100%;
+        height: 100%;
+        background-image: url("images/Image-7.png");
+        background-position: 0% -400vh;
+    }
+}
+
+@-webkit-keyframes two-to-one {
+    0% {
+        width: 100%;
+        height: 100%;
+        background-image: url("images/Image-7.png");
+        background-position: 0% -100vh;
+    }
+    100% {
+        width: 100%;
+        height: 100%;
+        background-image: url("images/Image-7.png");
+        background-position: 0% 0%;
+    }
+}
+
+@keyframes two-to-one {
+    0% {
+        width: 100%;
+        height: 100%;
+        background-image: url("images/Image-7.png");
+        background-position: 0% -100vh;
+    }
+    100% {
+        width: 100%;
+        height: 100%;
+        background-image: url("images/Image-7.png");
+        background-position: 0% 0%;
+    }
+}
+
+@-webkit-keyframes two-to-three {
+    0% {
+        width: 100%;
+        height: 100%;
+        background-image: url("images/Image-7.png");
+        background-position: 0% -100vh;
+    }
+    100% {
+        width: 100%;
+        height: 100%;
+        background-image: url("images/Image-7.png");
+        background-position: 0% -250vh;
+    }
+}
+
+@keyframes two-to-three {
+    0% {
+        width: 100%;
+        height: 100%;
+        background-image: url("images/Image-7.png");
+        background-position: 0% -100vh;
+    }
+    100% {
+        width: 100%;
+        height: 100%;
+        background-image: url("images/Image-7.png");
+        background-position: 0% -250vh;
+    }
+}
+
+@-webkit-keyframes two-to-four {
+    0% {
+        width: 100%;
+        height: 100%;
+        background-image: url("images/Image-7.png");
+        background-position: 0% -100vh;
+    }
+    100% {
+        width: 100%;
+        height: 100%;
+        background-image: url("images/Image-7.png");
+        background-position: 0% -400vh;
+    }
+}
+
+@keyframes two-to-four {
+    0% {
+        width: 100%;
+        height: 100%;
+        background-image: url("images/Image-7.png");
+        background-position: 0% -100vh;
+    }
+    100% {
+        width: 100%;
+        height: 100%;
+        background-image: url("images/Image-7.png");
+        background-position: 0% -400vh;
+    }
+}
+
+@-webkit-keyframes three-to-one {
+    0% {
+        width: 100%;
+        height: 100%;
+        background-image: url("images/Image-7.png");
+        background-position: 0% -250vh;
+    }
+    100% {
+        width: 100%;
+        height: 100%;
+        background-image: url("images/Image-7.png");
+        background-position: 0% 0%;
+    }
+}
+
+@keyframes three-to-one {
+    0% {
+        width: 100%;
+        height: 100%;
+        background-image: url("images/Image-7.png");
+        background-position: 0% -250vh;
+    }
+    100% {
+        width: 100%;
+        height: 100%;
+        background-image: url("images/Image-7.png");
+        background-position: 0% 0%;
+    }
+}
+
+@-webkit-keyframes three-to-two {
+    0% {
+        width: 100%;
+        height: 100%;
+        background-image: url("images/Image-7.png");
+        background-position: 0% -250vh;
+    }
+    100% {
+        width: 100%;
+        height: 100%;
+        background-image: url("images/Image-7.png");
+        background-position: 0% -100vh;
+    }
+}
+
+@keyframes three-to-two {
+    0% {
+        width: 100%;
+        height: 100%;
+        background-image: url("images/Image-7.png");
+        background-position: 0% -250vh;
+    }
+    100% {
+        width: 100%;
+        height: 100%;
+        background-image: url("images/Image-7.png");
+        background-position: 0% -100vh;
+    }
+}
+
+@-webkit-keyframes three-to-four {
+    0% {
+        width: 100%;
+        height: 100%;
+        background-image: url("images/Image-7.png");
+        background-position: 0% -250vh;
+    }
+    100% {
+        width: 100%;
+        height: 100%;
+        background-image: url("images/Image-7.png");
+        background-position: 0% -400vh;
+    }
+}
+
+@keyframes three-to-four {
+    0% {
+        width: 100%;
+        height: 100%;
+        background-image: url("images/Image-7.png");
+        background-position: 0% -250vh;
+    }
+    100% {
+        width: 100%;
+        height: 100%;
+        background-image: url("images/Image-7.png");
+        background-position: 0% -400vh;
+    }
+}
+
+@-webkit-keyframes four-to-one {
+    0% {
+        width: 100%;
+        height: 100%;
+        background-image: url("images/Image-7.png");
+        background-position: 0% -400vh;
+    }
+    100% {
+        width: 100%;
+        height: 100%;
+        background-image: url("images/Image-7.png");
+        background-position: 0% 0%;
+    }
+}
+
+@keyframes four-to-one {
+    0% {
+        width: 100%;
+        height: 100%;
+        background-image: url("images/Image-7.png");
+        background-position: 0% -400vh;
+    }
+    100% {
+        width: 100%;
+        height: 100%;
+        background-image: url("images/Image-7.png");
+        background-position: 0% 0%;
+    }
+}
+
+@-webkit-keyframes four-to-two {
+    0% {
+        width: 100%;
+        height: 100%;
+        background-image: url("images/Image-7.png");
+        background-position: 0% -400vh;
+    }
+    100% {
+        width: 100%;
+        height: 100%;
+        background-image: url("images/Image-7.png");
+        background-position: 0% -100vh;
+    }
+}
+
+@keyframes four-to-two {
+    0% {
+        width: 100%;
+        height: 100%;
+        background-image: url("images/Image-7.png");
+        background-position: 0% -400vh;
+    }
+    100% {
+        width: 100%;
+        height: 100%;
+        background-image: url("images/Image-7.png");
+        background-position: 0% -100vh;
+    }
+}
+
+@-webkit-keyframes four-to-three {
+    0% {
+        width: 100%;
+        height: 100%;
+        background-image: url("images/Image-7.png");
+        background-position: 0% -400vh;
+    }
+    100% {
+        width: 100%;
+        height: 100%;
+        background-image: url("images/Image-7.png");
+        background-position: 0% -250vh;
+    }
+}
+
+@keyframes four-to-three {
+    0% {
+        width: 100%;
+        height: 100%;
+        background-image: url("images/Image-7.png");
+        background-position: 0% -400vh;
+    }
+    100% {
+        width: 100%;
+        height: 100%;
+        background-image: url("images/Image-7.png");
+        background-position: 0% -250vh;
+    }
+}
+
+@keyframes four-to-one {
+    0% {
+        width: 100%;
+        height: 100%;
+        background-image: url("images/Image-7.png");
+        background-position: 0% -400vh;
+    }
+    100% {
+        width: 100%;
+        height: 100%;
+        background-image: url("images/Image-7.png");
+        background-position: 0% 0%;
+    }
+}
+
+.from-1-to-2 {
+    -webkit-animation: one-to-two 2s 1s cubic-bezier(1,.015,.295,1.225);
+            animation: one-to-two 2s 1s cubic-bezier(1,.015,.295,1.225);
+    -webkit-animation-direction: normal;
+            animation-direction: normal;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+}
+
+.from-1-to-3 {
+    -webkit-animation: one-to-three 2s 1s cubic-bezier(1,.015,.295,1.225);
+            animation: one-to-three 2s 1s cubic-bezier(1,.015,.295,1.225);
+    -webkit-animation-direction: normal;
+            animation-direction: normal;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+}
+
+.from-1-to-4 {
+    -webkit-animation: one-to-four 2s 1s cubic-bezier(1,.015,.295,1.225);
+            animation: one-to-four 2s 1s cubic-bezier(1,.015,.295,1.225);
+    -webkit-animation-direction: normal;
+            animation-direction: normal;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+}
+
+.from-2-to-1 {
+    -webkit-animation: two-to-one 2s 1s cubic-bezier(1,.015,.295,1.225);
+            animation: two-to-one 2s 1s cubic-bezier(1,.015,.295,1.225);
+    -webkit-animation-direction: normal;
+            animation-direction: normal;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+}
+
+.from-2-to-3 {
+    -webkit-animation: two-to-three 2s 1s cubic-bezier(1,.015,.295,1.225);
+            animation: two-to-three 2s 1s cubic-bezier(1,.015,.295,1.225);
+    -webkit-animation-direction: normal;
+            animation-direction: normal;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+}
+
+.from-2-to-4 {
+    -webkit-animation: two-to-four 2s 1s cubic-bezier(1,.015,.295,1.225);
+            animation: two-to-four 2s 1s cubic-bezier(1,.015,.295,1.225);
+    -webkit-animation-direction: normal;
+            animation-direction: normal;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+}
+
+.from-3-to-1 {
+    -webkit-animation: three-to-one 2s 1s cubic-bezier(1,.015,.295,1.225);
+            animation: three-to-one 2s 1s cubic-bezier(1,.015,.295,1.225);
+    -webkit-animation-direction: normal;
+            animation-direction: normal;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+}
+
+.from-3-to-2 {
+    -webkit-animation: three-to-two 2s 1s cubic-bezier(1,.015,.295,1.225);
+            animation: three-to-two 2s 1s cubic-bezier(1,.015,.295,1.225);
+    -webkit-animation-direction: normal;
+            animation-direction: normal;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+}
+
+.from-3-to-4 {
+    -webkit-animation: three-to-four 2s 1s cubic-bezier(1,.015,.295,1.225);
+            animation: three-to-four 2s 1s cubic-bezier(1,.015,.295,1.225);
+    -webkit-animation-direction: normal;
+            animation-direction: normal;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+}
+
+.from-4-to-1 {
+    -webkit-animation: four-to-one 2s 1s cubic-bezier(1,.015,.295,1.225);
+            animation: four-to-one 2s 1s cubic-bezier(1,.015,.295,1.225);
+    -webkit-animation-direction: normal;
+            animation-direction: normal;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+}
+
+.from-4-to-2 {
+    -webkit-animation: four-to-two 2s 1s cubic-bezier(1,.015,.295,1.225);
+            animation: four-to-two 2s 1s cubic-bezier(1,.015,.295,1.225);
+    -webkit-animation-direction: normal;
+            animation-direction: normal;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+}
+
+.from-4-to-3 {
+    -webkit-animation: four-to-three 2s 1s cubic-bezier(1,.015,.295,1.225);
+            animation: four-to-three 2s 1s cubic-bezier(1,.015,.295,1.225);
+    -webkit-animation-direction: normal;
+            animation-direction: normal;
+    -webkit-animation-fill-mode: both;
+            animation-fill-mode: both;
+}

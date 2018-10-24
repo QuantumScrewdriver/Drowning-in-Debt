@@ -1,0 +1,216 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*
+    ==============
+    end hard reset
+    ==============
+*/
+
+/* 
+    ==============
+    image resizing
+    ==============
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+.center-fit {
+    max-width: 100%;
+    /*max-height: 100vh;*/
+    margin: auto;
+}
+
+/*
+    ========================
+    div sizes and background
+    ========================
+*/
+
+.background {
+    width: 100%;
+    background-image: url("images/Image-7.png");
+}
+
+.container {
+    max-height: 100vh;
+    overflow-y: scroll;
+    scroll-snap-type: mandatory;
+    scroll-snap-points-y: repeat(100vh);
+    scroll-snap-type: y mandatory;
+}
+
+/* 
+    ==============
+    Snap-scrolling
+    ==============
+*/
+
+.page {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    scroll-snap-align: start;
+}
+
+.inside {
+    border: 5px solid #f4ccbf;
+    opacity: 0.95;
+    width: 90vw;
+    margin: 5vh 0 0 5vw;
+    height: 90vh;
+    position: relative;
+    transition: all 0.3s ease-out;
+}
+
+/*
+    ==================
+    css test animation
+    ==================
+*/
+
+@keyframes tutsFade {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+}
+@keyframes tutsRotate {
+    to {
+      transform: rotate(180deg);
+    }
+}
+
+@keyframes square-to-circle {
+    0%  {
+      border-radius:0 0 0 0;
+      background:coral;
+      transform:rotate(0deg);
+    }
+    25%  {
+      border-radius:50% 0 0 0;
+      background:darksalmon;
+      transform:rotate(45deg);
+    }
+    50%  {
+      border-radius:50% 50% 0 0;
+      background:indianred;
+      transform:rotate(90deg);
+    }
+    75%  { 
+      border-radius:50% 50% 50% 0;
+      background:lightcoral;
+      transform:rotate(135deg);
+    }
+    100% {  
+      border-radius:50%;
+      background:darksalmon;
+      transform:rotate(180deg);
+    }
+}
+
+.element {
+    animation-name: tutsFade;
+    animation-duration: 4s;
+    animation-delay: 1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    animation-direction: alternate;
+    -webkit-animation: tutsFade 4s 1s infinite linear alternate, tutsRotate 4s 1s infinite linear alternate;
+    -moz-animation: tutsFade 4s 1s infinite linear alternate, tutsRotate 4s 1s infinite linear alternate;
+    -ms-animation: tutsFade 4s 1s infinite linear alternate, tutsRotate 4s 1s infinite linear alternate;
+    -o-animation: tutsFade 4s 1s infinite linear alternate, tutsRotate 4s 1s infinite linear alternate;
+    animation: tutsFade 4s 1s infinite linear alternate, tutsRotate 4s 1s infinite linear alternate;
+}
+
+.animator {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    top: 50%;
+    left: 50%;
+    margin: -100px 0 0 -100px;
+    background-color: coral;
+    animation: square-to-circle 2s 1s infinite cubic-bezier(1,.015,.295,1.225) alternate;
+    outline: 1px solid transparent;
+}
+
+/*
+    ========
+    Floating
+    ========
+*/
+
+#float {
+    position: relative;
+    -webkit-animation: floatBubble 2s 1s /*infinite*/  normal ease-out;
+    animation: floatBubble 2s 1s /*infinite*/  normal ease-out;
+}
+@-webkit-keyframes floatBubble {
+    0% {
+        top:550px;
+    }
+    100% {
+        top: 0px;
+    }
+}
+@keyframes floatBubble {
+    0% {
+        top:500px;
+    }
+    100% {
+        top: 0px;
+    }
+}

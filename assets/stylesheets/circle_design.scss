@@ -1,0 +1,84 @@
+/// Mixin to place items on a circle
+/// @author Hugo Giraudel
+/// @author Ana Tudor
+/// @param {Integer} $item-count - Number of items on the circle
+/// @param {Length} $circle-size - Large circle size
+/// @param {Length} $item-size - Single item size
+@mixin on-circle($item-count, $circle-size, $item-size) {
+  position: fixed;
+  width:  $circle-size;
+  height: $circle-size;
+  padding: 0;
+  border-radius: 50%;
+  list-style: none;       
+  
+  > * {
+    display: block;
+    position: fixed;
+    top:  50%; 
+    left: 50%;
+    width:  $item-size;
+    height: $item-size;
+    margin: -($item-size / 2);
+  
+    $angle: (360 / $item-count);
+    $rot: 0;
+
+    @for $i from 1 through $item-count {
+      &:nth-of-type(#{$i}) {
+        -webkit-transform: 
+          rotate($rot * 1deg) 
+          translate($circle-size / 2) 
+          rotate($rot * -1deg);
+                transform: 
+          rotate($rot * 1deg) 
+          translate($circle-size / 2) 
+          rotate($rot * -1deg);
+      }
+
+      $rot: $rot + $angle;
+    }
+  }
+}
+
+.circle-container {
+  @include on-circle($item-count: 14, $circle-size: 80vh, $item-size: 5em); 
+  right: 50%;
+  top: 0;
+  margin-top: 10vh;
+  margin-right: -42vh;
+  border: solid 5px tomato;
+  font-family: Raleway;
+  font-weight: 800;
+
+  li { 
+    display: -webkit-box; 
+    display: -ms-flexbox; 
+    display: flex;
+    max-width: 100%; 
+    border-radius: 50%;
+    -webkit-filter: grayscale(100%);
+            filter: grayscale(100%);
+    border: solid 5px tomato;
+    -webkit-transition: .15s;
+    transition: .15s;
+    background-color: WHITE;
+    cursor: pointer;
+    list-style-position: inside;
+    word-wrap:break-word;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    line-height: 1;
+    
+    &:hover,
+    &:active {
+      -webkit-filter: grayscale(0);
+              filter: grayscale(0);
+    }
+  }
+}

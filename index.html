@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Student Debt</title>
+        <link rel="stylesheet" href="assets/stylesheets/base.css">
+        <link rel="stylesheet" href="assets/stylesheets/text_styles.css">
+        <link rel="stylesheet" href="assets/stylesheets/circle_design.css">
+        <link rel="stylesheet" href="assets/stylesheets/animation_styles.css">
+        <link rel="stylesheet" href="assets/stylesheets/page_shift.css">
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Charmonman:100,400,700">
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Raleway">
+        <!--Map Materials-->
+        <script src="jquery-3.3.1.min.js"></script>
+        <link href="assets/mapmaker/jqvmap.css" media="screen" rel="stylesheet" type="text/css"/>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script src="assets/mapmaker/jquery.vmap.js"></script>
+        <script src="assets/mapmaker/jquery.vmap.usa.js"></script>
+    </head>
+    <body>
+        <!--<div class="flex-row">-->
+        <!--<div id="navigator" class="navigator">
+            <div id="navigate1" class="navigate-text">Introduction</div>
+            <div id="navigate2" class="navigate-text">Individual</div>
+            <div id="navigate3" class="navigate-text">Reason</div>
+            <div id="navigate4" class="navigate-text">Action</div>
+        </div>-->
+        <section id="backGround" class="background">
+            <div class="cheater" onclick="change1to3()">Cheat</div>
+            <div id="1" class="fill" style="left: 0">
+                <p1 id="firstText" class="text1 animator2">Here are some numbers on student debt:</p1>
+                <p1 id="secondText" class="text2 animator3">44.2 million students</p1>
+                <p1 id="thirdText" class="text3 animator4">Up to 21 years on repayment</p1>
+                <p1 id="fourthText" class="text4 animator5">Total debt of $1.52 trillion</p1>
+                <p1 id="askQuestion1" class="q1">Are you, or will you be, a college student?</p1>        
+                <div id="button1" class="btn text5 animator6" onclick="change1to2()">Here's how it could affect you</div>
+            </div>
+
+            <div id="2" class="fill" style="left: 100vw">
+                <div id="button2" class="btn answerText1" onclick="answerQ1()">Yes</div>
+                <div id="button3" class="btn answerText2" onclick="answerQ2()">No</div>
+                <div id="vmap" class="map"></div>
+                <div id="text1" class="maptext">Your state is:</div>
+                <div id="text2" class="toMajor btn">Next!</div>
+                <div id="stateName" style="visibility: hidden"></div>
+                <div id="rent" class="Major"></div>
+                <div id="debt" class="toDebt"></div>
+                <div id="salary" class="toSalary"></div>
+                <div id="chooseMajor" style="visibility: hidden">Which field best describes your interest or major?</div>
+                <div id="apology" class="sorry">Sorry, this section is still under construction!</div>
+                <div id="move_along" style="visibility: hidden" onclick="backToCollege()">See how this affects college students.</div>
+                <div id="wtf" class="btn text6 animatorWTF" onclick="change2to3()" style="z-index: -1">How did this happen?</div>
+            </div>
+
+            <div id="3" class="fill">
+                <div id="speechbubble1" class="speech-bubble bubble-place animatorpopout">Let's look back at 1971, when the Supreme Court ruled that IQ tests were discriminatory in Griggs vs. Duke Power Co. (via Forbes). As a result, more companies began to treat college degrees as requirements.</div>
+                <img id="fishy" src="assets/stylesheets/images/haha fish lineless.png" class="speaker animatorpopout">
+                <div id="info-btn1" style="display: none" class="btn-text btnplace1 animatorpopout" onclick="how1()">Next</div>
+                <div id="wapo_graph" class="img-with-text speech-bubble bubble-place animatorpopout">
+                    <img src="assets/stylesheets/images/Business_insider_college_tuition.png" alt="sometext"/>
+                    <p class="citation">Matthews, Dylan. “The Tuition Is Too Damn High, Part III - The Three Reasons Tuition Is Rising.” The Washington Post, WP Company, 28 Aug. 2013, www.washingtonpost.com/news/wonk/wp/2013/08/28/the-tuition-is-too-damn-high-part-iii-the-three-reasons-tuition-is-rising/?noredirect=on&utm_term=.0d1f323f00ac.</p>
+                </div>
+            </div>
+
+            <div id="4" class="fill"></div>
+        </section>
+        <ul id="circleContainer" class='animatorpopout circle-container'>
+            <li id="major1" onclick="getDebt(this.id)">Agriculture</li>
+            <li id="major2" onclick="getDebt(this.id)">Architecture</li>
+            <li id="major3" onclick="getDebt(this.id)">Communications</li>
+            <li id="major4" onclick="getDebt(this.id)">Computer Science</li>
+            <li id="major5" onclick="getDebt(this.id)">Education</li>
+            <li id="major6" onclick="getDebt(this.id)">Engineering</li>
+            <li id="major7" onclick="getDebt(this.id)">Law</li>
+            <li id="major8" onclick="getDebt(this.id)">English</li>
+            <li id="major9" onclick="getDebt(this.id)">Biology</li>
+            <li id="major10" onclick="getDebt(this.id)">Mathematics</li>
+            <li id="major11" onclick="getDebt(this.id)">Physical Science</li>
+            <li id="major12" onclick="getDebt(this.id)">Social Science</li>
+            <li id="major13" onclick="getDebt(this.id)">Art</li>
+            <li id="major14" onclick="getDebt(this.id)">Business</li>
+        </ul>
+        <!--</div>-->
+        <script src="assets/script.js"></script>
+        <script src="assets/calculator.js"></script>
+    </body>
+</html>
