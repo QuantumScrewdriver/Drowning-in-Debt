@@ -69,13 +69,10 @@ div {
 }
 
 .flex-row {
-    display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
 }
 
 section{
@@ -154,19 +151,14 @@ img {
 }
 
 .navigator {
-    display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: space-evenly;
+        justify-content: space-evenly;
+    -ms-flex-align: center;
+        align-items: center;
     height: 100vh;
     position: fixed;
     left: 0;
@@ -199,15 +191,13 @@ img {
     height: 56vh;
     width: 56vh;
     border-radius: 1em;
-    background-color: white
-    ;display: -webkit-box;
+    background-color: white;
     display: -ms-flexbox;
     display: flex;
         -ms-flex-flow: column wrap;
             flex-flow: column wrap;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+    -ms-flex-pack: space-evenly;
+        justify-content: space-evenly;
     justify-items: center;
     justify-self: center;
     text-justify: center;
@@ -230,32 +220,27 @@ img {
     left: 2.5%;
     border: solid 5px #ffee8f;
     background-color: white;
-    -webkit-filter: grayscale(100%);
     filter: grayscale(100%);
-    -webkit-transition: .15s;
     transition: .15s;
     border-radius: 50%;
     z-index: 100;
     font-family: Raleway;
     font-size: 16px;
     font-weight: bolder;
-    display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-flow: column wrap;
             flex-flow: column wrap;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+    -ms-flex-pack: space-evenly;
+        justify-content: space-evenly;
     justify-items: center;
     justify-self: center;
     text-justify: center;
     text-align: center;
 }
 .circle-back:hover, .circle-back:active{
-    -webkit-filter: grayscale(0);
     filter: grayscale(0);
     cursor: pointer;
 }
@@ -273,7 +258,6 @@ img {
  
 /* Track */
 ::-webkit-scrollbar-track {
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0);
     box-shadow: inset 0 0 6px rgba(0,0,0,0);
     border-radius: 10px;
 }
@@ -282,7 +266,6 @@ img {
 ::-webkit-scrollbar-thumb {
     border-radius: 10px;
     background: rgba(128, 128, 128, 0.8);
-    -webkit-transition: 0.5s;
     transition: 0.5s;
 }
 ::-webkit-scrollbar-thumb:window-inactive {
