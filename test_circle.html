@@ -7,6 +7,7 @@
         <link rel="stylesheet" href="assets/stylesheets/text_styles.css">
         <link rel="stylesheet" href="assets/stylesheets/circle_design.css">
         <link rel="stylesheet" href="assets/stylesheets/animation_styles.css">
+        <link rel="stylesheet" href="assets/stylesheets/manage_circles.css">
         <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Charmonman:100,400,700">
         <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Raleway">
         <!--Map Materials-->
@@ -16,24 +17,62 @@
         <script src="jqvmap/jqvmap-master/dist/jquery.vmap.js"></script>
         <script src="jqvmap/jqvmap-master/dist/maps/jquery.vmap.usa.js"></script>
     </head>
-    <body>
-        <ul id="circleContainer" class='circle-container'>
-            <li id="major1" onclick="getDebt(this.id)">Agriculture</li>
-            <li id="major2" onclick="getDebt(this.id)">Architecture</li>
-            <li id="major3" onclick="getDebt(this.id)">Communications</li>
-            <li id="major4" onclick="getDebt(this.id)">Computer Science</li>
-            <li id="major5" onclick="getDebt(this.id)">Education</li>
-            <li id="major6" onclick="getDebt(this.id)">Engineering</li>
-            <li id="major7" onclick="getDebt(this.id)">Law</li>
-            <li id="major8" onclick="getDebt(this.id)">English</li>
-            <li id="major9" onclick="getDebt(this.id)">Biology</li>
-            <li id="major10" onclick="getDebt(this.id)">Mathematics</li>
-            <li id="major11" onclick="getDebt(this.id)">Physical Science</li>
-            <li id="major12" onclick="getDebt(this.id)">Social Science</li>
-            <li id="major13" onclick="getDebt(this.id)">Art</li>
-            <li id="major14" onclick="getDebt(this.id)">Business</li>
+    <body onload="createCircle()">
+        <ul id="circleContainer1" class='circle-container4 swirl-out'>
+            <li id="help1" onclick="getInfo(this.id)">Legislation</li>
+            <li id="help2" onclick="getInfo(this.id)">Spread the Word</li>
+            <li id="help3" onclick="getInfo(this.id)">Why this matters</li>
+            <li id="help4" onclick="getInfo(this.id)">Organizations</li>
         </ul>
+        <!--This is the Legislation circle-->
+        <div id="circleofhelp1" style="display: none" class="circle swirl-out-circle-reverse">
+            <div id="backhelp1" class="circle-back" onclick="goBack(this.id)">Back</div>
+        </div>
+        <div id="squarehelp1" style="display: none" class="circle-square swirl-out-square">
+            <p class="help-title">Upcoming Legislation on Student Debt</p>
+            <a class="help-subheading-link" href="https://aguilar.house.gov/media-center/press-releases/aguilar-introduces-bill-encourage-entrepreneurship-and-job-creation" target="_blank">Recent Grads in Start-Ups and Innovation Act</a>
+            <p class="help-body">Introduced: 7/26/2018</br>This bill allows federal loan borrowers to defer on their Federal Direct Loans for up to four years. To be eligible, borrowers must own a small business, as defined by the Small Business Act, with at least one employee located in an "opportunity zone" as qualified by the Treasury Department and IRS.</p>
+            <a class="help-subheading-link" href="http://democrats-edworkforce.house.gov/aim-higher" target="_blank">Aim Higher Act</a>
+            <p class="help-body">Introduced: 7/26/2018</br>The Aim Higher Act covers a greater amount of student debt, expands existing financial aid programs, and supports state-based financial aid. The act also targets predatory for-profit colleges and low-quality programs, and includes policies to help college students from a variety of backgrounds.</p>
+            <a class="help-subheading-link" href="https://www.govtrack.us/congress/bills/115/hr6280" target="_blank">Parent PLUS Improvement Act</a>
+            <p class="help-body">Introduced: 6/28/2018</br>The Parent PLUS Improvement Act makes several changes to the Parent PLUS Loan, which loans out financial aid to the parents of college students. It would lower interest rates, eliminate the origination fee at the start of the loan, require in-person or online loan entrance counseling, and allow borrowers to participate in repayment plans based on income.</p>
+        </div>
+        <!--This is the social media circle-->
+        <div id="circleofhelp2" style="display: none" class="circle swirl-out-circle">
+            <div id="backhelp2" class="circle-back" onclick="goBack(this.id)">Back</div>
+        </div>
+        <div id="squarehelp2" style="display: none" class="circle-square1 swirl-out-square">
+            <a href="https://www.facebook.com/sharer/sharer.php?u=http%3A//www.edudebt.info/" target="_blank"><img src="assets/stylesheets/images/if_facebook_circle_294710.png" alt="Share on Facebook"></a>
+            <a href="https://twitter.com/home?status=How%20student%20debt%20is%20a%20growing%20problem%20for%20the%20U.S.%20(and%20what%20we%20can%20do%20about%20it)%20http%3A//www.edudebt.info/%20%23edudebt" target="_blank"><img src="assets/stylesheets/images/circle_twitter_icon_512.png" alt="Share on Twitter"></a>
+            <a href="https://plus.google.com/share?url=http%3A//www.edudebt.info/" target="_blank"><img src="assets/stylesheets/images/Google-plus-circle-icon-png.png" alt="Share on Google+"></a>
+            <a href="https://www.linkedin.com/shareArticle?mini=true&url=http%3A//www.edudebt.info/&title=Drowning%20in%20Debt&summary=An%20informational%20website%20on%20the%20extent%20of%20the%20student%20debt%20crisis%20in%20America%20and%20what%20individual%20Americans%20do%20about%20it.&source=" target="_blank"><img src="assets/stylesheets/images/if_linkedin_circle_294706.png" alt="Share on LinkedIn"></a>
+        </div>
+        <!--This is the circle on how this affects people-->
+        <div id="circleofhelp3" style="display: none" class="circle swirl-out-circle">
+            <div id="backhelp3" class="circle-back" onclick="goBack(this.id)">Back</div>
+        </div>
+        <div id="squarehelp3" style="display: none" class="circle-square swirl-out-square">
+            <p class="help-title">Why Student Debt Represents a Crisis for America</p>
+            <p class="help-subheading">A Lasting Impact after Graduation</p>
+            <p class="help-body"><a class="help-body-link" href="http://time.com/money/4168510/why-student-loan-crisis-is-worse-than-people-think/" target="_blank">Time</a>has reported that student loans have severely impacted major life goals for graduates, such as buying a home, getting married, or having children.</p>
+            <p class="help-subheading">Deters Students from Higher Education</p>
+            <p class="help-body"><a class="help-body-link" href="http://journals.sagepub.com/doi/abs/10.1177/0002716217696041" target="_blank">Studies</a>have shown that prospective students of higher education, particularly in lower-income households, are more likely to have debt-averse attitudes and, as a result, are more likely to be deterred from going to college. This attitude has increased rather than decreased in the past decades, reflecting the deepening nature of this crisis.</p>
+        </div>
+        <!--This is the circle on organizations that can help-->
+        <div id="circleofhelp4" style="display: none" class="circle swirl-out-circle">
+            <div id="backhelp4" class="circle-back" onclick="goBack(this.id)">Back</div>
+        </div>
+        <div id="squarehelp4" style="display: none" class="circle-square swirl-out-square">
+            <p class="help-title">Organizations that Work on the Issue of Student Debt</p>
+            <a class="help-subheading-link" href="https://www.demos.org/" target="_blank">DEMOS</a>
+            <p class="help-body">From the About Us Page:</br></br>Demos is a public policy organization working for an America where we all have an equal say in our democracy and an equal chance in our economy.</br></br>Our name means “the people.” It is the root word of democracy, and it reminds us that in America, the true source of our greatness is the diversity of our people. Our nation’s highest challenge is to create a democracy that truly empowers people of all backgrounds, so that we all have a say in setting the policies that shape opportunity and provide for our common future. To help America meet that challenge, Demos is working to reduce both political and economic inequality, deploying original research, advocacy, litigation, and strategic communications to create the America the people deserve.</p>
+            <a class="help-subheading-link" href="https://edtrust.org/" target="_blank">Education Trust</a>
+            <p class="help-body">From the About Us Page:</br></br>The Education Trust is a nonprofit organization that promotes closing opportunity gaps by expanding excellence and equity in education for students of color and those from low-income families from pre-kindergarten through college. Through research and advocacy, the organization builds and engages diverse communities that care about education equity, increases political and public will to act on equity issues, and increases college access and completion for historically underserved students.</p>
+            <a class="help-subheading-link" href="https://ticas.org/posd/home" target="_blank">Project on Student Debt</a>
+            <p class="help-body">For Americans of all socio-economic backgrounds, borrowing has become a primary way to pay for higher education. The Project on Student Debt works to increase public understanding of this trend and the implications for our families, economy, and society. Recognizing that loans play a critical role in making college possible, the Project's goal is to identify cost-effective solutions that expand educational opportunity, protect family financial security, and advance economic competitiveness.</br></br>The Project on Student Debt is an initiative of the Institute for College Access & Success, a nonprofit independent research and policy organization dedicated to making college more available and affordable to people of all backgrounds.</br></br>Mission:</br></br>For Americans of all socio-economic backgrounds, borrowing has become a primary way to pay for higher education. The Project on Student Debt works to increase public understanding of this trend and the implications for our families, economy, and society. Recognizing that loans play a critical role in making college possible, the Project's goal is to identify cost-effective solutions that expand educational opportunity, protect family financial security, and advance economic competitiveness.</p>
+        </div>
         <script src="assets/script.js"></script>
         <script src="assets/calculator.js"></script>
+        <script src="assets/help.js"></script>
     </body>
 </html>

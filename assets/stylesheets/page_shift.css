@@ -100,7 +100,7 @@ table {
         width: 100%;
         height: 100%;
         background-image: url("images/Image-7.png");
-        background-position: 0% -250vh;
+        background-position: 0% calc(-4800px + 200vh);
     }
 }
 
@@ -115,7 +115,7 @@ table {
         width: 100%;
         height: 100%;
         background-image: url("images/Image-7.png");
-        background-position: 0% -250vh;
+        background-position: 0% calc(-4800px + 200vh);
     }
 }
 
@@ -130,7 +130,7 @@ table {
         width: 100%;
         height: 100%;
         background-image: url("images/Image-7.png");
-        background-position: 0% -400vh;
+        background-position: 0% calc(-4800px + 100vh);
     }
 }
 
@@ -145,7 +145,7 @@ table {
         width: 100%;
         height: 100%;
         background-image: url("images/Image-7.png");
-        background-position: 0% -400vh;
+        background-position: 0% calc(-4800px + 100vh);
     }
 }
 
@@ -190,7 +190,7 @@ table {
         width: 100%;
         height: 100%;
         background-image: url("images/Image-7.png");
-        background-position: 0% -250vh;
+        background-position: 0% calc(-4800px + 200vh);
     }
 }
 
@@ -205,7 +205,7 @@ table {
         width: 100%;
         height: 100%;
         background-image: url("images/Image-7.png");
-        background-position: 0% -250vh;
+        background-position: 0% calc(-4800px + 200vh);
     }
 }
 
@@ -220,7 +220,7 @@ table {
         width: 100%;
         height: 100%;
         background-image: url("images/Image-7.png");
-        background-position: 0% -400vh;
+        background-position: 0% calc(-4800px + 100vh);
     }
 }
 
@@ -235,7 +235,7 @@ table {
         width: 100%;
         height: 100%;
         background-image: url("images/Image-7.png");
-        background-position: 0% -400vh;
+        background-position: 0% calc(-4800px + 100vh);
     }
 }
 
@@ -244,7 +244,7 @@ table {
         width: 100%;
         height: 100%;
         background-image: url("images/Image-7.png");
-        background-position: 0% -250vh;
+        background-position: 0% calc(-4800px + 200vh);
     }
     100% {
         width: 100%;
@@ -259,7 +259,7 @@ table {
         width: 100%;
         height: 100%;
         background-image: url("images/Image-7.png");
-        background-position: 0% -250vh;
+        background-position: 0% calc(-4800px + 200vh);
     }
     100% {
         width: 100%;
@@ -274,7 +274,7 @@ table {
         width: 100%;
         height: 100%;
         background-image: url("images/Image-7.png");
-        background-position: 0% -250vh;
+        background-position: 0% calc(-4800px + 200vh);
     }
     100% {
         width: 100%;
@@ -289,7 +289,7 @@ table {
         width: 100%;
         height: 100%;
         background-image: url("images/Image-7.png");
-        background-position: 0% -250vh;
+        background-position: 0% calc(-4800px + 200vh);
     }
     100% {
         width: 100%;
@@ -304,13 +304,13 @@ table {
         width: 100%;
         height: 100%;
         background-image: url("images/Image-7.png");
-        background-position: 0% -250vh;
+        background-position: 0% calc(-4800px + 200vh);
     }
     100% {
         width: 100%;
         height: 100%;
         background-image: url("images/Image-7.png");
-        background-position: 0% -400vh;
+        background-position: 0% calc(-4800px + 100vh);
     }
 }
 
@@ -319,13 +319,13 @@ table {
         width: 100%;
         height: 100%;
         background-image: url("images/Image-7.png");
-        background-position: 0% -250vh;
+        background-position: 0% calc(-4800px + 200vh);
     }
     100% {
         width: 100%;
         height: 100%;
         background-image: url("images/Image-7.png");
-        background-position: 0% -400vh;
+        background-position: 0% calc(-4800px + 100vh);
     }
 }
 
@@ -334,7 +334,7 @@ table {
         width: 100%;
         height: 100%;
         background-image: url("images/Image-7.png");
-        background-position: 0% -400vh;
+        background-position: 0% calc(-4800px + 100vh);
     }
     100% {
         width: 100%;
@@ -349,7 +349,7 @@ table {
         width: 100%;
         height: 100%;
         background-image: url("images/Image-7.png");
-        background-position: 0% -400vh;
+        background-position: 0% calc(-4800px + 100vh);
     }
     100% {
         width: 100%;
@@ -364,7 +364,7 @@ table {
         width: 100%;
         height: 100%;
         background-image: url("images/Image-7.png");
-        background-position: 0% -400vh;
+        background-position: 0% calc(-4800px + 100vh);
     }
     100% {
         width: 100%;
@@ -379,7 +379,7 @@ table {
         width: 100%;
         height: 100%;
         background-image: url("images/Image-7.png");
-        background-position: 0% -400vh;
+        background-position: 0% calc(-4800px + 100vh);
     }
     100% {
         width: 100%;
@@ -394,13 +394,13 @@ table {
         width: 100%;
         height: 100%;
         background-image: url("images/Image-7.png");
-        background-position: 0% -400vh;
+        background-position: 0% calc(-4800px + 100vh);
     }
     100% {
         width: 100%;
         height: 100%;
         background-image: url("images/Image-7.png");
-        background-position: 0% -250vh;
+        background-position: 0% calc(-4800px + 200vh);
     }
 }
 
@@ -409,13 +409,13 @@ table {
         width: 100%;
         height: 100%;
         background-image: url("images/Image-7.png");
-        background-position: 0% -400vh;
+        background-position: 0% calc(-4800px + 100vh);
     }
     100% {
         width: 100%;
         height: 100%;
         background-image: url("images/Image-7.png");
-        background-position: 0% -250vh;
+        background-position: 0% calc(-4800px + 200vh);
     }
 }
 
@@ -424,7 +424,7 @@ table {
         width: 100%;
         height: 100%;
         background-image: url("images/Image-7.png");
-        background-position: 0% -400vh;
+        background-position: 0% calc(-4800px + 100vh);
     }
     100% {
         width: 100%;

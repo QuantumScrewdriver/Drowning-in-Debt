@@ -1,7 +1,16 @@
 function setRent(){
-    document.getElementById("vmap").style.zIndex = "-1";
-    document.getElementById("text1").style.zIndex = "-1";
-    document.getElementById("text2").style.zIndex = "-1";
+    var vmap = document.getElementById("vmap")
+    var txt1 = document.getElementById("text1");
+    var txt2 = document.getElementById("text2")
+    vmap.classList.remove("animator7");
+    void vmap.offsetWidth;
+    vmap.classList.add("animator7-reverse");
+    txt1.classList.remove("animator7");
+    void txt1.offsetWidth;
+    txt1.classList.add("animator7-reverse");
+    txt1.style.animationPlayState = "running";
+    txt2.classList.add("animator7-reverse");
+    txt2.style.animationPlayState = "running";
     var x = document.getElementById("stateName").textContent;
     if (x == "Alabama") {
         document.getElementById("rent").innerHTML = "Average rent in Alabama is $750";
@@ -167,7 +176,7 @@ function setRent(){
 }
 
 function getDebt(objectID){
-    var major = ['Agriculture', 'Architecture', 'Communications', 'Computer and Information Services', 'Education', 'Engineering', 'Law', 'English', 'Biology', 'Mathematics', 'Physical Sciences', 'Social Sciences', 'Arts', 'Business']
+    var major = ['Agriculture', 'Architecture', 'Communications', 'Computer Science', 'Education', 'Engineering', 'Law', 'English', 'Biology', 'Mathematics', 'Physical Science', 'Social Science', 'Art', 'Business']
     var debt = ['$10,395', '$11,052', '$24,828', '$23,887', '$20,658', '$16,792', '$45,073', '$28,098', '$28,952', '$15,389', '$13,731', '$21,109', '$18,908', '$22,664']
     var salary = ['$48,729', '$62,300', '$47,047', '$61,321', '$34,891', '$64,891', '$47,500', '$43,200', '$43,200', '$58,200', '$50,900', '$46,585', '$39,400', '$52,236']
     var checker = false;

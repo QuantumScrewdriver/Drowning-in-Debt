@@ -89,4 +89,65 @@
       -webkit-filter: grayscale(0);
       filter: grayscale(0); }
 
+.circle-container4 {
+  position: fixed;
+  width: 40vh;
+  height: 40vh;
+  padding: 0;
+  border-radius: 50%;
+  list-style: none;
+  right: 50%;
+  top: 0;
+  margin-top: 10vh;
+  margin-right: -40vh;
+  border: solid 5px #ffee8f;
+  font-family: Raleway;
+  font-weight: 800; }
+  .circle-container4 > * {
+    display: block;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    width: 6em;
+    height: 6em;
+    margin: -3em; }
+    .circle-container4 > *:nth-of-type(1) {
+      -webkit-transform: rotate(0deg) translate(20vh) rotate(0deg);
+      transform: rotate(0deg) translate(20vh) rotate(0deg); }
+    .circle-container4 > *:nth-of-type(2) {
+      -webkit-transform: rotate(90deg) translate(20vh) rotate(-90deg);
+      transform: rotate(90deg) translate(20vh) rotate(-90deg); }
+    .circle-container4 > *:nth-of-type(3) {
+      -webkit-transform: rotate(180deg) translate(20vh) rotate(-180deg);
+      transform: rotate(180deg) translate(20vh) rotate(-180deg); }
+    .circle-container4 > *:nth-of-type(4) {
+      -webkit-transform: rotate(270deg) translate(20vh) rotate(-270deg);
+      transform: rotate(270deg) translate(20vh) rotate(-270deg); }
+  .circle-container4 li {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 100%;
+    border-radius: 50%;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    border: solid 5px #ffee8f;
+    -webkit-transition: .15s;
+    transition: .15s;
+    background-color: WHITE;
+    cursor: pointer;
+    list-style-position: inside;
+    word-wrap: break-word;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    text-align: center;
+    line-height: 1; }
+    .circle-container4 li:hover, .circle-container4 li:active {
+      -webkit-filter: grayscale(0);
+      filter: grayscale(0); }
+
 /*# sourceMappingURL=circle_design.css.map */

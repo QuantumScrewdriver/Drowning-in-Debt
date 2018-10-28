@@ -1,0 +1,532 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*
+    ==============
+    end hard reset
+    ==============
+*/
+
+@-webkit-keyframes circleOpen {
+    0% {
+            width: 40vh;
+            height: 40vh;
+    }
+    100% {
+            width: 200vh;
+            height: 200vh;
+    }
+}
+
+@keyframes circleOpen {
+    0% {
+            width: 40vh;
+            height: 40vh;
+            position: fixed;
+            top: 0;
+            right: 50%;
+            margin-top: 30vh;
+            margin-right: -20vh;
+    }
+    100% {
+            width: 400vh;
+            height: 400vh;
+            position: fixed;
+            top: 50%;
+            right: 50%;
+            margin-top: -200vh;
+            margin-right: -200vh;
+    }
+}
+
+@-webkit-keyframes circleOpen1 {
+    0% {
+            position: fixed;
+            right: 50%;
+            -webkit-transform: translateX(20vh);
+                    transform: translateX(20vh);
+    }
+    100% {
+            position: fixed;
+            right: 50%;
+            -webkit-transform: translateX(200vh);
+                    transform: translateX(200vh);
+    }
+}
+
+@keyframes circleOpen1 {
+    0% {
+            position: fixed;
+            right: 50%;
+            -webkit-transform: translateX(20vh);
+                    transform: translateX(20vh);
+    }
+    100% {
+            position: fixed;
+            right: 50%;
+            -webkit-transform: translateX(200vh);
+                    transform: translateX(200vh);
+    }
+}
+
+@-webkit-keyframes circleOpen2 {
+    0% {
+            position: fixed;
+            right: 50%;
+            -webkit-transform: translateY(20vh);
+                    transform: translateY(20vh);
+    }
+    100% {
+            position: fixed;
+            right: 50%;
+            -webkit-transform: translateY(200vh);
+                    transform: translateY(200vh);
+    }
+}
+
+@keyframes circleOpen2 {
+    0% {
+            position: fixed;
+            right: 50%;
+            -webkit-transform: translateY(20vh);
+                    transform: translateY(20vh);
+    }
+    100% {
+            position: fixed;
+            right: 50%;
+            -webkit-transform: translateY(200vh);
+                    transform: translateY(200vh);
+    }
+}
+
+@-webkit-keyframes circleOpen3 {
+    0% {
+            position: fixed;
+            right: 50%;
+            -webkit-transform: translateX(-20vh);
+                    transform: translateX(-20vh);
+    }
+    100% {
+            position: fixed;
+            right: 50%;
+            -webkit-transform: translateX(-200vh);
+                    transform: translateX(-200vh);
+    }
+}
+
+@keyframes circleOpen3 {
+    0% {
+            position: fixed;
+            right: 50%;
+            -webkit-transform: translateX(-20vh);
+                    transform: translateX(-20vh);
+    }
+    100% {
+            position: fixed;
+            right: 50%;
+            -webkit-transform: translateX(-200vh);
+                    transform: translateX(-200vh);
+    }
+}
+
+@-webkit-keyframes circleOpen4 {
+    0% {
+            position: fixed;
+            right: 50%;
+            -webkit-transform: translateY(-20vh);
+                    transform: translateY(-20vh);
+    }
+    100% {
+            position: fixed;
+            right: 50%;
+            -webkit-transform: translateY(-200vh);
+                    transform: translateY(-200vh);
+    }
+}
+
+@keyframes circleOpen4 {
+    0% {
+            position: fixed;
+            right: 50%;
+            -webkit-transform: translateY(-20vh);
+                    transform: translateY(-20vh);
+    }
+    100% {
+            position: fixed;
+            right: 50%;
+            -webkit-transform: translateY(-200vh);
+                    transform: translateY(-200vh);
+    }
+}
+
+@-webkit-keyframes swirlOut {
+    from {
+            -webkit-transform: rotate(360deg)
+            scale(0);
+                    transform: rotate(360deg)
+            scale(0);
+            opacity: 0;
+            position: fixed;
+            top: 0;
+            right: 50%;
+            margin-top: 30vh;
+            margin-right: -20vh;
+    }
+    to {
+            -webkit-transform: rotate(0)
+            scale(1);
+                    transform: rotate(0)
+            scale(1);
+            opacity: 1;
+            position: fixed;
+            top: 0;
+            right: 50%;
+            margin-top: 30vh;
+            margin-right: -20vh;
+    }
+}
+
+@keyframes swirlOut {
+    from {
+            -webkit-transform: rotate(360deg)
+            scale(0);
+                    transform: rotate(360deg)
+            scale(0);
+            opacity: 0;
+            position: fixed;
+            top: 0;
+            right: 50%;
+            margin-top: 30vh;
+            margin-right: -20vh;
+    }
+    to {
+            -webkit-transform: rotate(0)
+            scale(1);
+                    transform: rotate(0)
+            scale(1);
+            opacity: 1;
+            position: fixed;
+            top: 0;
+            right: 50%;
+            margin-top: 30vh;
+            margin-right: -20vh;
+    }
+}
+
+@-webkit-keyframes swirlOutCircle {
+    from {
+            -webkit-transform: rotate(360deg)
+            scale(0);
+                    transform: rotate(360deg)
+            scale(0);
+            opacity: 0;
+            position: fixed;
+            top: 0;
+            right: 50%;
+            margin-top: 10vh;
+            margin-right: -40vh;
+    }
+    to {
+            -webkit-transform: rotate(0)
+            scale(1);
+                    transform: rotate(0)
+            scale(1);
+            opacity: 1;
+            position: fixed;
+            top: 0;
+            right: 50%;
+            margin-top: 10vh;
+            margin-right: -40vh;
+    }
+}
+
+@keyframes swirlOutCircle {
+    from {
+            -webkit-transform: rotate(360deg)
+            scale(0);
+                    transform: rotate(360deg)
+            scale(0);
+            opacity: 0;
+            position: fixed;
+            top: 0;
+            right: 50%;
+            margin-top: 10vh;
+            margin-right: -40vh;
+    }
+    to {
+            -webkit-transform: rotate(0)
+            scale(1);
+                    transform: rotate(0)
+            scale(1);
+            opacity: 1;
+            position: fixed;
+            top: 0;
+            right: 50%;
+            margin-top: 10vh;
+            margin-right: -40vh;
+    }
+}
+
+@-webkit-keyframes swirlOutSquare {
+    from {
+        -webkit-transform: rotate(360deg)
+        scale(0);
+                transform: rotate(360deg)
+        scale(0);
+        opacity: 0;
+        position: fixed;
+        top: 50%;
+        margin-top: -28vh;
+        right: 50%;
+        margin-right:-28vh;
+    }
+    to {
+        -webkit-transform: rotate(0)
+        scale(1);
+                transform: rotate(0)
+        scale(1);
+        opacity: 1;
+        position: fixed;
+        top: 50%;
+        margin-top: -28vh;
+        right: 50%;
+        margin-right:-28vh;
+    }
+}
+
+@keyframes swirlOutSquare {
+    from {
+        -webkit-transform: rotate(360deg)
+        scale(0);
+                transform: rotate(360deg)
+        scale(0);
+        opacity: 0;
+        position: fixed;
+        top: 50%;
+        margin-top: -28vh;
+        right: 50%;
+        margin-right:-28vh;
+    }
+    to {
+        -webkit-transform: rotate(0)
+        scale(1);
+                transform: rotate(0)
+        scale(1);
+        opacity: 1;
+        position: fixed;
+        top: 50%;
+        margin-top: -28vh;
+        right: 50%;
+        margin-right:-28vh;
+    }
+}
+
+.circle-open {
+        -webkit-animation: circleOpen ease-in-out;
+                animation: circleOpen ease-in-out;
+        -webkit-animation-duration: 1s;
+                animation-duration: 1s;
+        -webkit-animation-fill-mode: both;
+                animation-fill-mode: both;
+        -webkit-animation-direction: normal;
+                animation-direction: normal;
+}
+
+.circle-open-reverse {
+        -webkit-animation: circleOpen ease-in-out;
+                animation: circleOpen ease-in-out;
+        -webkit-animation-duration: 1s;
+                animation-duration: 1s;
+        -webkit-animation-fill-mode: both;
+                animation-fill-mode: both;
+        -webkit-animation-direction: reverse;
+                animation-direction: reverse;
+}
+
+.circle-open1 {
+        -webkit-animation: circleOpen1 ease-in-out;
+                animation: circleOpen1 ease-in-out;
+        -webkit-animation-duration: 1s;
+                animation-duration: 1s;
+        -webkit-animation-fill-mode: both;
+                animation-fill-mode: both;
+        -webkit-animation-direction: normal;
+                animation-direction: normal;
+}
+
+.circle-open1-reverse {
+        -webkit-animation: circleOpen1 ease-in-out;
+                animation: circleOpen1 ease-in-out;
+        -webkit-animation-duration: 1s;
+                animation-duration: 1s;
+        -webkit-animation-fill-mode: both;
+                animation-fill-mode: both;
+        -webkit-animation-direction: reverse;
+                animation-direction: reverse;
+}
+
+.circle-open2 {
+        -webkit-animation: circleOpen2 ease-in-out;
+                animation: circleOpen2 ease-in-out;
+        -webkit-animation-duration: 1s;
+                animation-duration: 1s;
+        -webkit-animation-fill-mode: both;
+                animation-fill-mode: both;
+        -webkit-animation-direction: normal;
+                animation-direction: normal;
+}
+
+.circle-open2-reverse {
+        -webkit-animation: circleOpen2 ease-in-out;
+                animation: circleOpen2 ease-in-out;
+        -webkit-animation-duration: 1s;
+                animation-duration: 1s;
+        -webkit-animation-fill-mode: both;
+                animation-fill-mode: both;
+        -webkit-animation-direction: reverse;
+                animation-direction: reverse;
+}
+
+.circle-open3 {
+        -webkit-animation: circleOpen3 ease-in-out;
+                animation: circleOpen3 ease-in-out;
+        -webkit-animation-duration: 1s;
+                animation-duration: 1s;
+        -webkit-animation-fill-mode: both;
+                animation-fill-mode: both;
+        -webkit-animation-direction: normal;
+                animation-direction: normal;
+}
+
+.circle-open3-reverse {
+        -webkit-animation: circleOpen3 ease-in-out;
+                animation: circleOpen3 ease-in-out;
+        -webkit-animation-duration: 1s;
+                animation-duration: 1s;
+        -webkit-animation-fill-mode: both;
+                animation-fill-mode: both;
+        -webkit-animation-direction: reverse;
+                animation-direction: reverse;
+}
+
+.circle-open4 {
+        -webkit-animation: circleOpen4 ease-in-out;
+                animation: circleOpen4 ease-in-out;
+        -webkit-animation-duration: 1s;
+                animation-duration: 1s;
+        -webkit-animation-fill-mode: both;
+                animation-fill-mode: both;
+        -webkit-animation-direction: normal;
+                animation-direction: normal;
+}
+
+.circle-open4-reverse {
+        -webkit-animation: circleOpen4 ease-in-out;
+                animation: circleOpen4 ease-in-out;
+        -webkit-animation-duration: 1s;
+                animation-duration: 1s;
+        -webkit-animation-fill-mode: both;
+                animation-fill-mode: both;
+        -webkit-animation-direction: reverse;
+                animation-direction: reverse;
+}
+
+.swirl-out {
+        -webkit-animation: swirlOut 1s ease-in-out 0s 1 normal both;
+                animation: swirlOut 1s ease-in-out 0s 1 normal both;
+        -webkit-animation-play-state: paused;
+                animation-play-state: paused;
+        -webkit-transform-origin: center center;
+                transform-origin: center center;
+}
+
+.swirl-out-reverse {
+        -webkit-animation: swirlOut 1s ease-in-out 0s 1 reverse both;
+                animation: swirlOut 1s ease-in-out 0s 1 reverse both;
+        -webkit-animation-play-state: paused;
+                animation-play-state: paused;
+        -webkit-transform-origin: center center;
+                transform-origin: center center;
+}
+
+.swirl-out-circle {
+        -webkit-animation: swirlOutCircle 1s ease-in-out 0s 1 normal both;
+                animation: swirlOutCircle 1s ease-in-out 0s 1 normal both;
+        -webkit-animation-play-state: paused;
+                animation-play-state: paused;
+        -webkit-transform-origin: center center;
+                transform-origin: center center;
+}
+
+.swirl-out-circle-reverse {
+        -webkit-animation: swirlOutCircle 1s ease-in-out 0s 1 reverse both;
+                animation: swirlOutCircle 1s ease-in-out 0s 1 reverse both;
+        -webkit-animation-play-state: paused;
+                animation-play-state: paused;
+        -webkit-transform-origin: center center;
+                transform-origin: center center;
+}
+
+.swirl-out-square {
+    -webkit-animation: swirlOutSquare 1s ease-in-out 0s 1 normal both;
+            animation: swirlOutSquare 1s ease-in-out 0s 1 normal both;
+    -webkit-animation-play-state: paused;
+            animation-play-state: paused;
+    -webkit-transform-origin: center center;
+            transform-origin: center center;
+}
+
+.swirl-out-square-reverse {
+    -webkit-animation: swirlOutSquare 1s ease-in-out 0s 1 reverse both;
+            animation: swirlOutSquare 1s ease-in-out 0s 1 reverse both;
+    -webkit-animation-play-state: paused;
+            animation-play-state: paused;
+    -webkit-transform-origin: center center;
+            transform-origin: center center;
+}
