@@ -177,10 +177,16 @@ function setRent(){
     document.getElementById("circleContainer").style.webkitAnimationDelay = "1s";
     var choose = document.getElementById("chooseMajor");
     function majorReveal(){
+        if(choose.classList.contains("animator2-reverse")){
+            choose.classList.remove("animator2-reverse")
+            void choose.offsetWidth;
+        }
         choose.style.display = "initial";
         choose.classList.add("animator2");
+        choose.style.animationPlayState = "running";
+        choose.style.webkitAnimationPlayState = "running";
         choose.style.animationDuration = "2s";
-        choose.style.webkitAnimation = "2s";
+        choose.style.webkitAnimationDuration = "2s";
     }
     setTimeout(majorReveal, 1000);
 }
