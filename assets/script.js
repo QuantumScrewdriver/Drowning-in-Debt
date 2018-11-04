@@ -1,37 +1,182 @@
 var sitePosition = 1;
+var completed = 0;
 
 function change1to2(){
     close1();
-    open2();
+    if(completed ==  1){reset2()}
+    setTimeout(open2, 2000);
     sitePosition = 2;
     document.getElementById("backGround").className="from-1-to-2";
-}
-
-function change2to3(){
-    close2();
-    open3();
-    document.getElementById("backGround").className="from-2-to-3";
     document.getElementById("backGround").style.animationDelay = "1s";
     document.getElementById("backGround").style.webkitAnimationDelay = "1s";
-    sitePosition = 3;
+    affectSidebar(sitePosition);
+    if(completed == 1){removeSidebar();};
 }
 
 function change1to3(){
     close1();
-    open3();
+    setTimeout(open3, 2000);
     document.getElementById("backGround").className="from-1-to-3";
     document.getElementById("backGround").style.animationDelay = "1s";
     document.getElementById("backGround").style.webkitAnimationDelay = "1s";
     sitePosition = 3;
+    affectSidebar(sitePosition);
+    if(completed == 1){removeSidebar();};
+}
+
+function change1to4(){
+    close1();
+    setTimeout(open4, 2000);
+    var back = document.getElementById("backGround");
+    back.className="from-1-to-4";
+    back.style.animationDelay="1s";
+    back.style.webkitAnimationDelay="1s";
+    sitePosition = 4;
+    affectSidebar(sitePosition);
+    if(completed == 1){removeSidebar();};
+}
+
+function change2to1(){
+    close2();
+    reset1();
+    setTimeout(open1, 2000);
+    var back = document.getElementById("backGround");
+    back.className="from-2-to-1";
+    back.style.animationDelay="1s";
+    back.style.webkitAnimationDelay="1s";
+    sitePosition = 1;
+    affectSidebar(sitePosition);
+    if(completed == 1){removeSidebar();};
+}
+
+function change2to3(){
+    close2();
+    setTimeout(open3, 2000);
+    document.getElementById("backGround").className="from-2-to-3";
+    document.getElementById("backGround").style.animationDelay = "1s";
+    document.getElementById("backGround").style.webkitAnimationDelay = "1s";
+    sitePosition = 3;
+    affectSidebar(sitePosition);
+    if(completed == 1){removeSidebar();};
+}
+
+function change2to4(){
+    close2();
+    setTimeout(open4, 2000);
+    var back = document.getElementById("backGround");
+    back.className="from-2-to-4";
+    back.style.animationDelay="1s";
+    back.style.webkitAnimationDelay="1s";
+    sitePosition = 4;
+    affectSidebar(sitePosition);
+    if(completed == 1){removeSidebar();};
+}
+
+function change3to1(){
+    close3();
+    reset1();
+    setTimeout(open1, 2000);
+    var back = document.getElementById("backGround");
+    back.className="from-3-to-1";
+    back.style.animationDelay="1s";
+    back.style.webkitAnimationDelay="1s";
+    sitePosition = 1;
+    affectSidebar(sitePosition);
+    if(completed == 1){removeSidebar();};
+}
+
+function change3to2(){
+    close3();
+    if(completed ==  1){reset2()}
+    setTimeout(open2, 2000);
+    var back = document.getElementById("backGround");
+    back.className="from-3-to-2";
+    back.style.animationDelay="1s";
+    back.style.webkitAnimationDelay="1s";
+    sitePosition = 2;
+    affectSidebar(sitePosition);
+    if(completed == 1){removeSidebar();};
 }
 
 function change3to4(){
     close3();
-    setTimeout(createCircle, 1500)
+    setTimeout(open4, 2000);
     var back = document.getElementById("backGround");
     back.className="from-3-to-4";
     back.style.animationDelay="1s";
     back.style.webkitAnimationDelay="1s";
+    sitePosition = 4;
+    affectSidebar(sitePosition);
+    if(completed == 1){removeSidebar();};
+}
+
+function change4to1(){
+    close4();
+    reset1();
+    setTimeout(open1, 2000);
+    var back = document.getElementById("backGround");
+    back.className="from-4-to-1";
+    back.style.animationDelay="1s";
+    back.style.webkitAnimationDelay="1s";
+    sitePosition = 1;
+    affectSidebar(sitePosition);
+    if(completed == 1){removeSidebar();};
+}
+
+function change4to2(){
+    close4();
+    if(completed ==  1){reset2()}
+    setTimeout(open2, 2000);
+    var back = document.getElementById("backGround");
+    back.className="from-4-to-2";
+    back.style.animationDelay="1s";
+    back.style.webkitAnimationDelay="1s";
+    sitePosition = 2;
+    affectSidebar(sitePosition);
+    if(completed == 1){removeSidebar();};
+}
+
+function change4to3(){
+    close4();
+    setTimeout(open3, 2000);
+    var back = document.getElementById("backGround");
+    back.className="from-4-to-3";
+    back.style.animationDelay="1s";
+    back.style.webkitAnimationDelay="1s";
+    sitePosition = 3;
+    affectSidebar(sitePosition);
+    if(completed == 1){removeSidebar();};
+}
+
+function affectSidebar(position){
+    var el1 = document.getElementById("sidebar1");
+    var el2 = document.getElementById("sidebar2");
+    var el3 = document.getElementById("sidebar3");
+    var el4 = document.getElementById("sidebar4");
+    if(position == 1){
+        el1.style.display = "flex";
+        el2.style.display = "none";
+        el3.style.display = "none";
+        el4.style.display = "none";
+    }
+    else if(position == 2){
+        el1.style.display = "none";
+        el2.style.display = "flex";
+        el3.style.display = "none";
+        el4.style.display = "none";
+    }
+    else if(position == 3){
+        el1.style.display = "none";
+        el2.style.display = "none";
+        el3.style.display = "flex";
+        el4.style.display = "none";
+    }
+    else if(position == 4){
+        el1.style.display = "none";
+        el2.style.display = "none";
+        el3.style.display = "none";
+        el4.style.display = "flex";
+    }
 }
 
 function answerQ1() {
@@ -178,6 +323,30 @@ function how2() {
     btn3.style.webkitAnimationDelay = "2s";
     btn3.style.animationPlayState = "running";
     btn3.style.webkitAnimationPlayState = "running";
+    if(completed == 1){setTimeout(addSidebar, 2500);}
+}
+
+function aboutus() {
+    var info = document.getElementById("aboutus");
+    if(info.classList.contains("moveinfromright-reverse") == true){
+        info.classList.remove("moveinfromright-reverse");
+        void info.offsetWidth;
+        info.classList.add("moveinfromright");
+        info.style.animationPlayState = "running";
+        info.style.webkitAnimationPlayState = "running";
+    }
+    else if(info.classList.contains("moveinfromright") == true) {
+        info.classList.remove("moveinfromright");
+        void info.offsetWidth;
+        info.classList.add("moveinfromright-reverse");
+        info.style.animationPlayState = "running";
+        info.style.webkitAnimationPlayState = "running";
+    }
+    else {
+        info.classList.add("moveinfromright");
+        info.style.animationPlayState = "running";
+        info.style.webkitAnimationPlayState = "running";
+    }
 }
 
 function close1() {
@@ -185,6 +354,9 @@ function close1() {
     var second = document.getElementById("secondText");
     var third = document.getElementById("thirdText");
     var fourth = document.getElementById("fourthText");
+    var btn1 = document.getElementById("button1");
+    btn1.style.cursor = "default";
+    btn1.onclick = "";
     first.classList.remove("animator2");
     void first.offsetWidth;
     first.classList.add("animator2-reverse");
@@ -205,23 +377,38 @@ function close1() {
     fourth.classList.add("animator5-reverse");
     fourth.style.animationDelay="0s";
     fourth.style.webkitAnimationDelay="0s";
-    setTimeout(document.getElementById("button1").style.display = "none", 1000);
+    btn1.classList.remove("animator6");
+    void btn1.offsetWidth;
+    btn1.classList.add("animator6-reverse");
+    btn1.style.animationDelay="0s";
+    btn1.style.webkitAnimationDelay="0s";
 }
 
 function close2() {
     var circle = document.getElementById("circleContainer");
+    if(circle.style.animationPlayState == "running" || circle.style.webkitAnimationPlayState == "running"){
+        circle.classList.remove("animatorpopout");
+        void circle.offsetWidth;
+        circle.classList.add("animatorpopout-reverse");
+        circle.style.animationDelay = "0s";
+        circle.style.webkitAnimationDelay = "0s";
+    }
     var wtf = document.getElementById("wtf");
-    circle.classList.remove("animatorpopout");
-    void circle.offsetWidth;
-    circle.classList.add("animatorpopout-reverse");
-    wtf.classList.remove("animatorpopout");
-    void wtf.offsetWidth;
-    wtf.classList.add("animatorpopout-reverse");
-    function eraser1() {document.getElementById("wtf").style.zIndex = "-1";}
-    setTimeout(eraser1, 1000);
+    if(wtf.style.animationPlayState == "running" || wtf.style.webkitAnimationPlayState == "running"){
+        wtf.classList.remove("animatorpopout");
+        void wtf.offsetWidth;
+        wtf.classList.add("animatorpopout-reverse");
+        function eraser1() {wtf.style.zIndex = "-1";}
+        setTimeout(eraser1, 1000);
+    }
     document.getElementById("rent").style.visibility = "hidden";
     document.getElementById("debt").style.visibility = "hidden";
     document.getElementById("salary").style.visibility = "hidden";
+    var choose = document.getElementById("chooseMajor");
+    setTimeout(choose.style.display = "none", 2000);
+    choose.classList.remove("animator2");
+    void choose.offsetWidth;
+    choose.classList.add("animator2-reverse")
 }
 
 function close3(){
@@ -251,22 +438,52 @@ function close3(){
     btn3.style.webkitAnimationDelay = "0s";
 }
 
+function close4(){
+    closeCircle();
+    var about = document.getElementById("aboutbutton");
+    about.classList.remove("aboutbtnmove");
+    void about.offsetWidth;
+    about.classList.add("aboutbtnmove-reverse");
+    about.style.animationPlayState = "running";
+    about.style.webkitAnimationPlayState = "running";
+    var c1 = document.getElementById("circleofhelp1");
+    var c2 = document.getElementById("circleofhelp2");
+    var c3 = document.getElementById("circleofhelp3");
+    var c4 = document.getElementById("circleofhelp4");
+    if(c1.style.display == "initial"){goBack("backhelp1")}
+    else if(c2.style.display == "initial"){goBack("backhelp2")}
+    else if(c3.style.display == "initial"){goBack("backhelp3")}
+    else if(c4.style.display == "initial"){goBack("backhelp4")}
+}
+
 function open1() {
     var text1 = document.getElementById("firstText");
     var text2 = document.getElementById("secondText");
     var text3 = document.getElementById("thirdText");
     var text4 = document.getElementById("fourthText");
     var btn1 = document.getElementById("button1");
+    if(completed == 1){
+        reset1();
+    }
     text1.style.animationPlayState = "running";
     text1.style.webkitAnimationPlayState = "running";
     text2.style.animationPlayState = "running";
     text2.style.webkitAnimationPlayState = "running";
+    text2.style.animationDelay = "1s";
+    text2.style.webkitAnimationDelay = "1s";
     text3.style.animationPlayState = "running";
     text3.style.webkitAnimationPlayState = "running";
+    text3.style.animationDelay = "2s";
+    text3.style.webkitAnimationDelay = "2s";
     text4.style.animationPlayState = "running";
     text4.style.webkitAnimationPlayState = "running";
+    text4.style.animationDelay = "3s";
+    text4.style.webkitAnimationDelay = "3s";
     btn1.style.animationPlayState = "running";
     btn1.style.webkitAnimationPlayState = "running";
+    text4.style.animationDelay = "4s";
+    text4.style.webkitAnimationDelay = "4s";
+    if(completed == 1){setTimeout(addSidebar, 4500);}
 }
 
 function open2() {
@@ -312,7 +529,29 @@ function open3(){
 }
 
 function open4(){
-    createCircle();
+    setTimeout(createCircle, 1200);
+    var sidebar = document.getElementById("sidebar");
+    function barOut(){
+        sidebar.style.animationPlayState = "running";
+        sidebar.style.webkitAnimationPlayState = "running";
+    }
+    if(completed == 0){
+        var about = document.getElementById("aboutbutton");
+        function aboutOut(){
+            about.style.animationPlayState = "running";
+            about.style.webkitAnimationPlayState = "running";
+        }
+        setTimeout(barOut, 5000);
+        setTimeout(aboutOut, 5000);
+        completed = 1;
+    } else {
+        about.classList.remove("aboutbtnmove-reverse");
+        void about.offsetWidth;
+        about.classList.add("aboutbtnmove");
+        about.style.animationPlayState = "running";
+        about.style.webkitAnimationPlayState = "running";
+        if(completed == 1){setTimeout(addSidebar, 2000);}
+    }
 }
 
 function createCircle(){
@@ -336,14 +575,26 @@ function reset1() {
     var text3 = document.getElementById("thirdText");
     var text4 = document.getElementById("fourthText");
     var btn1 = document.getElementById("button1");
-    text1.style.replace("text1 animator2-reverse", "text1 animator2");
+    text1.classList.remove("animator2-reverse");
     void text1.offsetWidth;
-    text2.style.replace("text2 animator3-reverse", "text2 animator3");
+    text1.classList.add("animator2");
+    text1.style.animationPlayState = "paused";
+    text1.style.webkitAnimationPlayState = "paused";
+    text2.classList.remove("animator3-reverse");
     void text2.offsetWidth;
-    text3.style.replace("text3 animator4-reverse", "text3 animator4");
+    text2.classList.add("animator3");
+    text2.style.animationPlayState = "paused";
+    text2.style.webkitAnimationPlayState = "paused";
+    text3.classList.remove("animator4-reverse");
     void text3.offsetWidth;
-    text4.style.replace("text4 animator5-reverse", "text4 animator5");
+    text3.classList.add("animator4");
+    text3.style.animationPlayState = "paused";
+    text3.style.webkitAnimationPlayState = "paused";
+    text4.classList.remove("animator5-reverse");
     void text4.offsetWidth;
+    text4.classList.add("animator5");
+    text4.style.animationPlayState = "paused";
+    text4.style.webkitAnimationPlayState = "paused";
     void btn1.offsetWidth;
     btn1.style.display = "initial";
 }
@@ -368,6 +619,62 @@ function reset2from2() {
     void btn3.offsetWidth;
     btn3.classList.add("btn");
     btn3.classList.add("answerText2");
+}
+
+function reset2(){
+    reset2from2();
+    var vmap = document.getElementById("vmap");
+    vmap.classList.remove("animator7-reverse");
+    void vmap.offsetWidth;
+    vmap.classList.add("animator7");
+    vmap.style.animationPlayState = "paused";
+    vmap.style.webkitAnimationPlayState = "paused";
+    vmap.style.visibility = "hidden";
+    var txt1 = document.getElementById("text1");
+    txt1.classList.remove("animator7-reverse");
+    void txt1.offsetWidth;
+    txt1.classList.add("animator7");
+    txt1.style.animationPlayState = "paused";
+    txt1.style.webkitAnimationPlayState = "paused";
+    txt1.style.visibility = "hidden";
+    txt1.innerHTML = "Your state is:";
+    var txt2 = document.getElementById("text1");
+    txt2.classList.remove("animator7-reverse");
+    void txt2.offsetWidth;
+    txt2.classList.add("animator7");
+    txt2.style.animationPlayState = "paused";
+    txt2.style.webkitAnimationPlayState = "paused";
+    txt2.style.visibility = "hidden";
+    document.getElementById("stateName").innerHTML = "";
+    var rent = document.getElementById("rent");
+    rent.innerHTML = "";
+    rent.style.visibility = "hidden";
+    var debt = document.getElementById("debt");
+    debt.innerHTML = "";
+    debt.style.visibility = "hidden";
+    var salary = document.getElementById("salary");
+    salary.innerHTML = "";
+    salary.style.visibility = "hidden";
+    var circle = document.getElementById("circleContainer");
+    circle.classList.remove("animatorpopout-reverse");
+    void circle.offsetWidth;
+    circle.classList.add("animatorpopout");
+    circle.style.animationPlayState = "paused";
+    circle.style.webkitAnimationPlayState = "paused";
+}
+
+function addSidebar(){
+    var sidebar = document.getElementById("sidebar");
+    sidebar.classList.remove("sidebarmove-reverse");
+    void sidebar.offsetWidth;
+    sidebar.classList.add("sidebarmove");
+}
+
+function removeSidebar(){
+    var sidebar = document.getElementById("sidebar");
+    sidebar.classList.remove("sidebarmove");
+    void sidebar.offsetWidth;
+    sidebar.classList.add("sidebarmove-reverse");
 }
 
 function roundCssTransformMatrix(element){

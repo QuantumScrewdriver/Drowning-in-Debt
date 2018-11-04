@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="Learn about America's student loan crisis, how it affects you, and what you can do about it.">
+        <meta name="author" content="Brian Kim">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Student Debt</title>
+        <link rel="stylesheet" href="assets/stylesheets/base.css">
+        <link rel="stylesheet" href="assets/stylesheets/text_styles.css">
+        <link rel="stylesheet" href="assets/stylesheets/circle_design.css">
+        <link rel="stylesheet" href="assets/stylesheets/animation_styles.css">
+        <link rel="stylesheet" href="assets/stylesheets/page_shift.css">
+        <link rel="stylesheet" href="assets/stylesheets/manage_circles.css">
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Charmonman:100,400,700">
+        <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Raleway">
+        <link rel="icon" href="assets/stylesheets/images/haha fish lineless.png">
+        <!--Map Materials-->
+        <script src="jquery-3.3.1.min.js"></script>
+        <link href="assets/mapmaker/jqvmap.css" media="screen" rel="stylesheet" type="text/css"/>
+        <script type="text/javascript" src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
+        <script src="assets/mapmaker/jquery.vmap.js"></script>
+        <script src="assets/mapmaker/jquery.vmap.usa.js"></script>
+    </head>
+    <body onload="{document.getElementById('sidebar').style.animationPlayState='running'}">
+        <section id="backGround" class="background">
+            <div id="sidebar" class="sidebar sidebarmove">
+                <div id="sidebar1" class="sidebar-internal">
+                    <div id="sidebar11" class="sidebar-element">Introduction</div>
+                    <div id="sidebar12" class="sidebar-element">Calculator</div>
+                    <div id="sidebar13" class="sidebar-element">Background</div>
+                    <div id="sidebar14" class="sidebar-element">Taking action</div>
+                </div>
+                <div id="sidebar2" class="sidebar-internal" style="display: none">
+                    <div id="sidebar21" class="sidebar-element">Introduction</div>
+                    <div id="sidebar22" class="sidebar-element">Calculator</div>
+                    <div id="sidebar23" class="sidebar-element">Background</div>
+                    <div id="sidebar24" class="sidebar-element">Taking action</div>
+                </div>
+                <div id="sidebar3" class="sidebar-internal" style="display: none">
+                    <div id="sidebar31" class="sidebar-element">Introduction</div>
+                    <div id="sidebar32" class="sidebar-element">Calculator</div>
+                    <div id="sidebar33" class="sidebar-element">Background</div>
+                    <div id="sidebar34" class="sidebar-element">Taking action</div>
+                </div>
+                <div id="sidebar4" class="sidebar-internal" style="display: none">
+                    <div id="sidebar41" class="sidebar-element">Introduction</div>
+                    <div id="sidebar42" class="sidebar-element">Calculator</div>
+                    <div id="sidebar43" class="sidebar-element">Background</div>
+                    <div id="sidebar44" class="sidebar-element">Taking action</div>
+                </div>
+            </div>
+            <div id="aboutus" class="about-us" style="left: 120vw"></div>
+            <div id="aboutbutton" class="about-us-btn">
+                <div class="about-us-btn-text aboutbtnmove" onclick="aboutus()">About Us</div>
+            </div>
+        </section>
+        <div class="testing-buttons">
+            <div onclick="affectSidebar(1)">1</div>
+            <div onclick="affectSidebar(2)">2</div>
+            <div onclick="affectSidebar(3)">3</div>
+            <div onclick="affectSidebar(4)">4</div>
+        </div>
+        <!--</div>-->
+        <script src="assets/script.js"></script>
+        <script src="assets/calculator.js"></script>
+        <script src="assets/help.js"></script>
+    </body>
+</html>

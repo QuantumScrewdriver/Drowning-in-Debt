@@ -175,11 +175,65 @@ table {
     }
 }
 
+@-webkit-keyframes moveInFromRight {
+        0% {
+                left: 120vw;
+        }
+        100% {
+                left: 10vw;
+        }
+}
+
+@keyframes moveInFromRight {
+        0% {
+                left: 120vw;
+        }
+        100% {
+                left: 10vw;
+        }
+}
+
+@-webkit-keyframes btnMove {
+        0% {
+                right: -15vw;
+        }
+        100% {
+                right: -4vw;
+        }
+}
+
+@keyframes btnMove {
+        0% {
+                right: -15vw;
+        }
+        100% {
+                right: -4vw;
+        }
+}
+
+@-webkit-keyframes sidebarMove {
+        0% {
+                left: -20vw;
+        }
+        100% {
+                left: -4vw;
+        }
+}
+
+@keyframes sidebarMove {
+        0% {
+                left: -20vw;
+        }
+        100% {
+                left: -4vw;
+        }
+}
+
 .animator2 {
     -webkit-animation: popOut cubic-bezier(1,.015,.295,1.225);
             animation: popOut cubic-bezier(1,.015,.295,1.225);
-    -webkit-animation-duration: 3s;
-            animation-duration: 3s;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
     -webkit-animation-delay: 0;
             animation-delay: 0;
     -webkit-animation-play-state: paused;
@@ -193,8 +247,8 @@ table {
 .animator2-reverse {
         -webkit-animation: popOut cubic-bezier(1,.015,.295,1.225);
                 animation: popOut cubic-bezier(1,.015,.295,1.225);
-        -webkit-animation-duration: 3s;
-                animation-duration: 3s;
+        -webkit-animation-duration: 2s;
+                animation-duration: 2s;
         -webkit-animation-delay: 0;
                 animation-delay: 0;
         -webkit-animation-play-state: paused;
@@ -208,8 +262,8 @@ table {
 .animator3 {
     -webkit-animation: popOut cubic-bezier(1,.015,.295,1.225);
             animation: popOut cubic-bezier(1,.015,.295,1.225);
-    -webkit-animation-duration: 3s;
-            animation-duration: 3s;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
     -webkit-animation-delay: 1s;
             animation-delay: 1s;
         -webkit-animation-play-state: paused;
@@ -223,8 +277,8 @@ table {
 .animator3-reverse {
         -webkit-animation: popOut cubic-bezier(1,.015,.295,1.225);
                 animation: popOut cubic-bezier(1,.015,.295,1.225);
-        -webkit-animation-duration: 3s;
-                animation-duration: 3s;
+        -webkit-animation-duration: 2s;
+                animation-duration: 2s;
         -webkit-animation-delay: 1s;
                 animation-delay: 1s;
         -webkit-animation-play-state: paused;
@@ -238,8 +292,8 @@ table {
 .animator4 {
     -webkit-animation: popOut cubic-bezier(1,.015,.295,1.225);
             animation: popOut cubic-bezier(1,.015,.295,1.225);
-    -webkit-animation-duration: 3s;
-            animation-duration: 3s;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
     -webkit-animation-delay: 2s;
             animation-delay: 2s;
         -webkit-animation-play-state: paused;
@@ -253,8 +307,8 @@ table {
 .animator4-reverse {
         -webkit-animation: popOut cubic-bezier(1,.015,.295,1.225);
                 animation: popOut cubic-bezier(1,.015,.295,1.225);
-        -webkit-animation-duration: 3s;
-                animation-duration: 3s;
+        -webkit-animation-duration: 2s;
+                animation-duration: 2s;
         -webkit-animation-delay: 2s;
                 animation-delay: 2s;
         -webkit-animation-play-state: paused;
@@ -268,8 +322,8 @@ table {
 .animator5 {
     -webkit-animation: popOut cubic-bezier(1,.015,.295,1.225);
             animation: popOut cubic-bezier(1,.015,.295,1.225);
-    -webkit-animation-duration: 3s;
-            animation-duration: 3s;
+    -webkit-animation-duration: 2s;
+            animation-duration: 2s;
     -webkit-animation-delay: 3s;
             animation-delay: 3s;
         -webkit-animation-play-state: paused;
@@ -283,8 +337,8 @@ table {
 .animator5-reverse {
         -webkit-animation: popOut cubic-bezier(1,.015,.295,1.225);
                 animation: popOut cubic-bezier(1,.015,.295,1.225);
-        -webkit-animation-duration: 3s;
-                animation-duration: 3s;
+        -webkit-animation-duration: 2s;
+                animation-duration: 2s;
         -webkit-animation-delay: 3s;
                 animation-delay: 3s;
         -webkit-animation-play-state: paused;
@@ -300,8 +354,8 @@ table {
             animation: popOut cubic-bezier(1,.015,.295,1.225);
     -webkit-animation-duration: 2s;
             animation-duration: 2s;
-    -webkit-animation-delay: 3s;
-            animation-delay: 3s;
+    -webkit-animation-delay: 4s;
+            animation-delay: 4s;
         -webkit-animation-play-state: paused;
             animation-play-state: paused;
     -webkit-animation-direction: normal;
@@ -315,8 +369,8 @@ table {
                 animation: popOut cubic-bezier(1,.015,.295,1.225);
         -webkit-animation-duration: 2s;
                 animation-duration: 2s;
-        -webkit-animation-delay: 3s;
-                animation-delay: 3s;
+        -webkit-animation-delay: 4s;
+                animation-delay: 4s;
         -webkit-animation-play-state: paused;
                 animation-play-state: paused;
         -webkit-animation-direction: reverse;
@@ -465,4 +519,82 @@ table {
                 animation-fill-mode: both;
         -webkit-animation-direction: reverse;
                 animation-direction: reverse;
+}
+
+.moveinfromright {
+        -webkit-animation: moveInFromRight ease-in-out;
+                animation: moveInFromRight ease-in-out;
+        -webkit-animation-duration: 1s;
+                animation-duration: 1s;
+        -webkit-animation-fill-mode: both;
+                animation-fill-mode: both;
+        -webkit-animation-direction: normal;
+                animation-direction: normal;
+        -webkit-animation-play-state: paused;
+                animation-play-state: paused;
+}
+
+.moveinfromright-reverse {
+        -webkit-animation: moveInFromRight ease-in-out;
+                animation: moveInFromRight ease-in-out;
+        -webkit-animation-duration: 1s;
+                animation-duration: 1s;
+        -webkit-animation-fill-mode: both;
+                animation-fill-mode: both;
+        -webkit-animation-direction: reverse;
+                animation-direction: reverse;
+        -webkit-animation-play-state: paused;
+                animation-play-state: paused;
+}
+
+.aboutbtnmove {
+        -webkit-animation: btnMove ease-in-out;
+                animation: btnMove ease-in-out;
+        -webkit-animation-duration: 1s;
+                animation-duration: 1s;
+        -webkit-animation-fill-mode: both;
+                animation-fill-mode: both;
+        -webkit-animation-direction: normal;
+                animation-direction: normal;
+        -webkit-animation-play-state: paused;
+                animation-play-state: paused;
+}
+
+.aboutbtnmove-reverse {
+        -webkit-animation: btnMove ease-in-out;
+                animation: btnMove ease-in-out;
+        -webkit-animation-duration: 1s;
+                animation-duration: 1s;
+        -webkit-animation-fill-mode: both;
+                animation-fill-mode: both;
+        -webkit-animation-direction: reverse;
+                animation-direction: reverse;
+        -webkit-animation-play-state: paused;
+                animation-play-state: paused;
+}
+
+.sidebarmove {
+        -webkit-animation: sidebarMove ease-in-out;
+                animation: sidebarMove ease-in-out;
+        -webkit-animation-duration: 1s;
+                animation-duration: 1s;
+        -webkit-animation-fill-mode: both;
+                animation-fill-mode: both;
+        -webkit-animation-direction: normal;
+                animation-direction: normal;
+        -webkit-animation-play-state: paused;
+                animation-play-state: paused;
+}
+
+.sidebarmove-reverse {
+        -webkit-animation: sidebarMove ease-in-out;
+                animation: sidebarMove ease-in-out;
+        -webkit-animation-duration: 1s;
+                animation-duration: 1s;
+        -webkit-animation-fill-mode: both;
+                animation-fill-mode: both;
+        -webkit-animation-direction: reverse;
+                animation-direction: reverse;
+        -webkit-animation-play-state: paused;
+                animation-play-state: paused;
 }

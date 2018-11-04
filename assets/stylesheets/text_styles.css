@@ -135,6 +135,7 @@ p1 {
 .answerText1{
     font-size: 40px;
     max-width: 100px;
+    font-weight: bolder;
     position: fixed;
     top: 50%;
     left: 33%;
@@ -144,6 +145,7 @@ p1 {
 .answerText2{
     font-size: 40px;
     max-width: 100px;
+    font-weight: bolder;
     position: fixed;
     top: 50%;
     left: 66%;
@@ -154,15 +156,29 @@ p1 {
     visibility: hidden;
     font-family: Raleway;
     font-size: 40px;
+    font-weight: bolder;
     position: fixed;
     bottom: 40vh;
     left: 80%;
     cursor: pointer;
 }
 
+.chooseMajor{
+    font-family: Raleway;
+    font-size: 40px;
+    font-weight: bolder;
+    position: fixed;
+    width: 18vw;
+    top: 20vh;
+    line-height: 1.5em;
+    left: 5vw;
+    cursor: pointer;
+}
+
 .Major{
     visibility: hidden;
     font-family: Raleway;
+    font-weight: bolder;
     font-size: 30px;
     position: fixed;
     bottom: 70vh;
@@ -172,6 +188,7 @@ p1 {
 .toDebt{
     visibility: hidden;
     font-family: Raleway;
+    font-weight: bolder;
     font-size: 30px;
     position: fixed;
     bottom: 55vh;
@@ -181,6 +198,7 @@ p1 {
 .toSalary{
     visibility: hidden;
     font-family: Raleway;
+    font-weight: bolder;
     font-size: 30px;
     position: fixed;
     bottom: 30vh;
@@ -202,6 +220,7 @@ p1 {
         align-self: center;
     font-family: Raleway;
     font-size: 30px;
+    font-weight: bolder;
     position: fixed;
     top: 40%;
     right: 50%;

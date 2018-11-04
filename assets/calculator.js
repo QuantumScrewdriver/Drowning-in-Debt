@@ -173,6 +173,16 @@ function setRent(){
     }
     document.getElementById("circleContainer").style.webkitAnimationPlayState = "running";
     document.getElementById("circleContainer").style.animationPlayState = "running";
+    document.getElementById("circleContainer").style.animationDelay = "1s";
+    document.getElementById("circleContainer").style.webkitAnimationDelay = "1s";
+    var choose = document.getElementById("chooseMajor");
+    function majorReveal(){
+        choose.style.display = "initial";
+        choose.classList.add("animator2");
+        choose.style.animationDuration = "2s";
+        choose.style.webkitAnimation = "2s";
+    }
+    setTimeout(majorReveal, 1000);
 }
 
 function getDebt(objectID){
@@ -197,4 +207,5 @@ function getDebt(objectID){
     document.getElementById("wtf").style.webkitAnimationPlayState = "running";
     document.getElementById("wtf").style.animationPlayState = "running";
     document.getElementById("wtf").style.zIndex = "100";
+    if(completed == 1){setTimeout(addSidebar, 1500);}
 }

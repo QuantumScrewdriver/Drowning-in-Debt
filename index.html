@@ -14,6 +14,7 @@
         <link rel="stylesheet" href="assets/stylesheets/manage_circles.css">
         <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Charmonman:100,400,700">
         <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Raleway">
+        <link rel="icon" href="assets/stylesheets/images/haha fish lineless.png">
         <!--Map Materials-->
         <script src="jquery-3.3.1.min.js"></script>
         <link href="assets/mapmaker/jqvmap.css" media="screen" rel="stylesheet" type="text/css"/>
@@ -22,15 +23,7 @@
         <script src="assets/mapmaker/jquery.vmap.usa.js"></script>
     </head>
     <body onload="open1()">
-        <!--<div class="flex-row">-->
-        <!--<div id="navigator" class="navigator">
-            <div id="navigate1" class="navigate-text">Introduction</div>
-            <div id="navigate2" class="navigate-text">Individual</div>
-            <div id="navigate3" class="navigate-text">Reason</div>
-            <div id="navigate4" class="navigate-text">Action</div>
-        </div>-->
         <section id="backGround" class="background">
-            
             <!--The first page-->
             <div id="1" class="fill" style="left: 0">
                 <p1 id="firstText" class="text1 animator2">Here are some numbers on student debt:</p1>
@@ -42,6 +35,7 @@
 
             <!--The second page-->
             <div id="2" class="fill" style="left: 100vw">
+                <div id="calcpos" style="display: none">1</div>
                 <div id="askQuestion1" class="q1" style="display: none">Are you, or will you be, a college student?</div>
                 <div id="button2" class="btn answerText1" style="display: none" onclick="answerQ1()">Yes</div>
                 <div id="button3" class="btn answerText2" style="display: none" onclick="answerQ2()">No</div>
@@ -52,7 +46,7 @@
                 <div id="rent" class="Major"></div>
                 <div id="debt" class="toDebt"></div>
                 <div id="salary" class="toSalary"></div>
-                <div id="chooseMajor" style="display: none">Which field best describes your interest or major?</div>
+                <div id="chooseMajor" class="chooseMajor" style="display: none">Which field best describes your interest or major?</div>
                 <div id="apology" class="sorry" style="display: none">Sorry, this section is still under construction!</div>
                 <div id="goback2" class="sorry" style="top: 70%; border: 5px; display: none; cursor: pointer;" onclick="goback2()">Return</div>
                 <div id="move_along" style="visibility: hidden" onclick="backToCollege()">See how this affects college students.</div>
@@ -129,6 +123,37 @@
                     <a class="help-subheading-link" href="https://ticas.org/posd/home" target="_blank">Project on Student Debt</a>
                     <p class="help-body">For Americans of all socio-economic backgrounds, borrowing has become a primary way to pay for higher education. The Project on Student Debt works to increase public understanding of this trend and the implications for our families, economy, and society. Recognizing that loans play a critical role in making college possible, the Project's goal is to identify cost-effective solutions that expand educational opportunity, protect family financial security, and advance economic competitiveness.</br></br>The Project on Student Debt is an initiative of the Institute for College Access & Success, a nonprofit independent research and policy organization dedicated to making college more available and affordable to people of all backgrounds.</br></br>Mission:</br></br>For Americans of all socio-economic backgrounds, borrowing has become a primary way to pay for higher education. The Project on Student Debt works to increase public understanding of this trend and the implications for our families, economy, and society. Recognizing that loans play a critical role in making college possible, the Project's goal is to identify cost-effective solutions that expand educational opportunity, protect family financial security, and advance economic competitiveness.</p>
                 </div>
+            </div>
+            <!--The sidebar and about us page-->
+            <div id="sidebar" class="sidebar sidebarmove">
+                    <div id="sidebar1" class="sidebar-internal">
+                        <div id="sidebar11" class="sidebar-element" style="cursor: default">Introduction</div>
+                        <div id="sidebar12" class="sidebar-element" onclick="change1to2()">Calculator</div>
+                        <div id="sidebar13" class="sidebar-element" onclick="change1to3()">Background</div>
+                        <div id="sidebar14" class="sidebar-element" onclick="change1to4()">Taking action</div>
+                    </div>
+                    <div id="sidebar2" class="sidebar-internal" style="display: none">
+                        <div id="sidebar21" class="sidebar-element" onclick="change2to1()">Introduction</div>
+                        <div id="sidebar22" class="sidebar-element" style="cursor: default">Calculator</div>
+                        <div id="sidebar23" class="sidebar-element" onclick="change2to3()">Background</div>
+                        <div id="sidebar24" class="sidebar-element" onclick="change2to4()">Taking action</div>
+                    </div>
+                    <div id="sidebar3" class="sidebar-internal" style="display: none">
+                        <div id="sidebar31" class="sidebar-element" onclick="change3to1()">Introduction</div>
+                        <div id="sidebar32" class="sidebar-element" onclick="change3to2()">Calculator</div>
+                        <div id="sidebar33" class="sidebar-element" style="cursor: default">Background</div>
+                        <div id="sidebar34" class="sidebar-element" onclick="change3to4()">Taking action</div>
+                    </div>
+                    <div id="sidebar4" class="sidebar-internal" style="display: none">
+                        <div id="sidebar41" class="sidebar-element" onclick="change4to1()">Introduction</div>
+                        <div id="sidebar42" class="sidebar-element" onclick="change4to2()">Calculator</div>
+                        <div id="sidebar43" class="sidebar-element" onclick="change4to3()">Background</div>
+                        <div id="sidebar44" class="sidebar-element" style="cursor: default">Taking action</div>
+                    </div>
+                </div>
+            <div id="aboutus" class="about-us" style="left: 120vw"></div>
+            <div id="aboutbutton" class="about-us-btn aboutbtnmove">
+                <div class="about-us-btn-text" onclick="aboutus()">About Us</div>
             </div>
         </section>
         <ul id="circleContainer" class='animatorpopout circle-container'>
