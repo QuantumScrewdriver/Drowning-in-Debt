@@ -334,6 +334,7 @@ function aboutus() {
         info.classList.add("moveinfromright");
         info.style.animationPlayState = "running";
         info.style.webkitAnimationPlayState = "running";
+        removeSidebar();
     }
     else if(info.classList.contains("moveinfromright") == true) {
         info.classList.remove("moveinfromright");
@@ -341,11 +342,13 @@ function aboutus() {
         info.classList.add("moveinfromright-reverse");
         info.style.animationPlayState = "running";
         info.style.webkitAnimationPlayState = "running";
+        addSidebar();
     }
     else {
         info.classList.add("moveinfromright");
         info.style.animationPlayState = "running";
         info.style.webkitAnimationPlayState = "running";
+        removeSidebar();
     }
 }
 

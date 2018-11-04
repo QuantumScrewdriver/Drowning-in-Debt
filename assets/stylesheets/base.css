@@ -352,6 +352,19 @@ img {
 
 /* About Us */
 .about-us{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     height: 90vh;
     width: 80vw;
     position: fixed;
@@ -360,6 +373,7 @@ img {
     border: 5px solid #ffee8f;
     border-radius: 20px;
     background-color: rgba(255, 255, 255, 0.596);
+    overflow-y: auto;
 }
 
 .about-us-x{
@@ -392,6 +406,18 @@ img {
             align-items: center;
     -webkit-transform: rotate(90deg);
     transform: rotate(90deg);
+}
+
+.about-us-title {
+    font-family: Raleway;
+    font-size: 30px;
+    font-weight: 900;
+}
+
+.about-us-element {
+    width: 90%;
+    background-color: blue;
+    height: 10vh;
 }
 
 .about-us-btn-text{
