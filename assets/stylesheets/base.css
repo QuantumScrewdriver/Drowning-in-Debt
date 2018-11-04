@@ -416,8 +416,20 @@ img {
 
 .about-us-element {
     width: 90%;
-    background-color: blue;
     height: 10vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
 }
 
 .about-us-btn-text{
@@ -430,6 +442,24 @@ img {
     cursor: pointer;
     text-align: center;
     vertical-align: bottom;
+}
+
+.about-us-element-text{
+    width: 60%;
+    font-family: Raleway;
+    line-height: 1.5em;
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.about-us-btn-image-container{
+    width: 30%;
+}
+
+.about-us-btn-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
 }
 
 /* Testing Buttons */
