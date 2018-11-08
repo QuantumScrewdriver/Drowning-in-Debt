@@ -351,7 +351,7 @@ img {
 }
 
 /* About Us */
-.about-us{
+.about-us{/*
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -364,7 +364,7 @@ img {
             justify-content: space-evenly;
     -webkit-box-align: center;
         -ms-flex-align: center;
-            align-items: center;
+            align-items: center;*/
     height: 90vh;
     width: 80vw;
     position: fixed;
@@ -412,11 +412,17 @@ img {
     font-family: Raleway;
     font-size: 30px;
     font-weight: 900;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+    width: 100%;
+    text-align: center;
 }
 
 .about-us-element {
+    overflow: auto;
     width: 90%;
-    height: 10vh;
+    height: auto;
+    padding: 5vh;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -446,6 +452,37 @@ img {
 
 .about-us-element-text{
     width: 60%;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-family: Raleway;
+    line-height: 1.5em;
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.about-us-element-title{
+    width: 100%;
+    font-family: Raleway;
+    line-height: 1.5em;
+    font-size: 24px;
+    font-weight: 900;
+}
+
+.about-us-element-body{
+    width: 100%;
+    height: auto;
     font-family: Raleway;
     line-height: 1.5em;
     font-size: 18px;
@@ -454,6 +491,7 @@ img {
 
 .about-us-btn-image-container{
     width: 30%;
+    height: auto;
 }
 
 .about-us-btn-image img {
